@@ -35,3 +35,32 @@ test("Negativ durch negative Zahl ist größer als 0", () => {
 
   expect(result).toBeGreaterThan(0);
 });
+test("Subtraktion von positiven Zahlen", () => {
+  const result = calculator.subtract(5, 3);
+  expect(result).toBe(2);
+});
+
+test("Subtraktion von negativen Zahlen", () => {
+  const result = calculator.subtract(-10, -5);
+  expect(result).toBe(-5);
+});
+
+test("Subtraktion von einer Zahl und 0", () => {
+  const result = calculator.subtract(0, 7);
+  expect(result).toBe(-7);
+});
+
+test("Multiplikation von positiven Zahlen", () => {
+  const result = calculator.multiply(4, 2);
+  expect(result).toBe(8);
+});
+
+test("Multiplikation von negativen Zahlen", () => {
+  const result = calculator.multiply(-3, 6);
+  expect(result).toBe(-18);
+});
+
+test("Multiplikation mit einer Zahl und 0", () => {
+  const result = calculator.multiply(0, 9);
+  expect(result).toBe(0);
+});
