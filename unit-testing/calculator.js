@@ -6,6 +6,9 @@ function sum(a, b) {
 function divide(a, b) {
   return a / b;
 }
+function sum(a, b) {
+  return a * b;
+}
 
 // Im Browser/in Javascript: export default ...
 // Wir sind hier aber in NodeJS!
