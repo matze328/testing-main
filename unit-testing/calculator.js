@@ -9,7 +9,9 @@ function divide(a, b) {
 function multiply(a, b) {
   return a * b;
 }
-
+function subtract(a, b) {
+  return a - b;
+}
 
 
 // Im Browser/in Javascript: export default ...
@@ -17,3 +19,4 @@ function multiply(a, b) {
 module.exports.sum = sum;
 module.exports.divide = divide;
 module.exports.multiply = multiply;
+module.exports.subtract = subtract;
