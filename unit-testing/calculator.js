@@ -6,11 +6,14 @@ function sum(a, b) {
 function divide(a, b) {
   return a / b;
 }
-function sum(a, b) {
+function multiply(a, b) {
   return a * b;
 }
+
+
 
 // Im Browser/in Javascript: export default ...
 // Wir sind hier aber in NodeJS!
 module.exports.sum = sum;
 module.exports.divide = divide;
+module.exports.multiply = multiply;
