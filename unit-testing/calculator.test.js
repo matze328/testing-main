@@ -55,7 +55,7 @@ test("Multiplikation von positiven Zahlen", () => {
   expect(result).toBe(8);
 });
 
-test("Multiplikation von negativen Zahlen", () => {
+test("Multiplikation mit einer negativen Zahl", () => {
   const result = calculator.multiply(-3, 6);
   expect(result).toBe(-18);
 });
