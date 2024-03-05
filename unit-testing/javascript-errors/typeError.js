@@ -2,6 +2,13 @@
 
 const zahl = 1024;
 
-zahl.map((item) => {
-  console.log(item);
+ try {
+  zahl.map((item) => {
+   console.log(item);
+
 });
+} catch (error) {
+    console.log("Ein Fehler ist aufgetreten: " + error.message);
+  } finally {
+    console.log("Die Verarbeitung wurde abgeschlossen.");
+  }
